@@ -1,0 +1,12 @@
+[
+  { "question": "What is the chemical symbol for gold?", "answer": "Au", "difficulty": "easy" },
+  { "question": "What planet is known as the Red Planet?", "answer": "Mars", "difficulty": "easy" },
+  { "question": "What is the speed of light in a vacuum?", "answer": "Approximately 299,792 kilometers per second", "difficulty": "hard" },
+  { "question": "What gas do plants absorb from the atmosphere for photosynthesis?", "answer": "Carbon dioxide (CO2)", "difficulty": "medium" },
+  { "question": "What is the hardest natural substance on Earth?", "answer": "Diamond", "difficulty": "easy" },
+  { "question": "How many bones are in the adult human body?", "answer": "206", "difficulty": "medium" },
+  { "question": "What force keeps planets in orbit around the sun?", "answer": "Gravity", "difficulty": "easy" },
+  { "question": "What is the powerhouse of the cell?", "answer": "The mitochondria", "difficulty": "easy" },
+  { "question": "What is the most abundant gas in Earth's atmosphere?", "answer": "Nitrogen (about 78%)", "difficulty": "medium" },
+  { "question": "What scientist proposed the theory of general relativity?", "answer": "Albert Einstein", "difficulty": "medium" }
+]
