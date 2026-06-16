@@ -1,6 +1,6 @@
 [
   { "question": "What is the chemical symbol for gold?", "answer": "Au", "difficulty": "easy" },
-  { "question": "What planet is known as the Red Planet?", "answer": "Mars", "difficulty": "easy" },
+  { "question": "What planet is known as the Red Planet?", "answer": "Mars", "difficulty": "easy", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/OSIRIS_Mars_true_color.jpg/240px-OSIRIS_Mars_true_color.jpg" },
   { "question": "What is the speed of light in a vacuum?", "answer": "Approximately 299,792 kilometers per second", "difficulty": "hard" },
   { "question": "What gas do plants absorb from the atmosphere for photosynthesis?", "answer": "Carbon dioxide (CO2)", "difficulty": "medium" },
   { "question": "What is the hardest natural substance on Earth?", "answer": "Diamond", "difficulty": "easy" },

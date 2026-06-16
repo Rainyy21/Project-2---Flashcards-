@@ -22,7 +22,7 @@ function App() {
       <h1>Science Flash Card</h1>
       <p>Test your knowledge about Science base question </p>
       <p>Number of cards: {deck.length}</p>
-      <Card key={index} question={card.question} answer={card.answer} difficulty={card.difficulty} />
+      <Card key={index} question={card.question} answer={card.answer} difficulty={card.difficulty} image={card.image} />
       <button className="next-btn" onClick={prev}>
         Previous
       </button>
