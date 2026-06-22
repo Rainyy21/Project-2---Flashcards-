@@ -1,7 +1,11 @@
-.card {
+.card-wrapper {
   width: 300px;
-  height: 200px;
   margin: 1rem auto;
+}
+
+.card {
+  width: 100%;
+  min-height: 200px;
   border: 1px solid #ccc;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -11,6 +15,7 @@
   justify-content: center;
   cursor: pointer;
   padding: 1.5rem;
+  box-sizing: border-box;
   background: #fff;
   user-select: none;
   color: #2c3e50;
@@ -54,4 +59,109 @@
 .card-hard {
   background: #f9d0d0;
   border-color: #e74c3c;
+}
+
+.guess-form {
+  margin-top: 1.25rem;
+  padding: 1rem 1.1rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  width: 100%;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(11, 20, 55, 0.18);
+  cursor: default;
+  text-align: left;
+}
+
+.guess-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #4a5b7a;
+  margin: 0;
+}
+
+.guess-row {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.guess-input {
+  flex: 1;
+  min-width: 0;
+  padding: 0.6rem 0.85rem;
+  border-radius: 8px;
+  border: 2px solid #d6dce6;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+  background: #fff;
+  color: #2c3e50;
+}
+
+.guess-input::placeholder {
+  color: #9aa6b8;
+}
+
+.guess-input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+}
+
+.guess-correct {
+  border-color: #2ecc71;
+  box-shadow: 0 0 0 3px rgba(46, 204, 113, 0.25);
+  background: #f1fbf5;
+}
+
+.guess-wrong {
+  border-color: #e74c3c;
+  box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.25);
+  background: #fdf2f1;
+}
+
+.guess-btn {
+  padding: 0.6rem 1.15rem;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(135deg, #4a90e2 0%, #357ab8 100%);
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(53, 122, 184, 0.35);
+  transition: transform 0.1s, box-shadow 0.2s, filter 0.2s;
+}
+
+.guess-btn:hover {
+  filter: brightness(1.05);
+  box-shadow: 0 4px 10px rgba(53, 122, 184, 0.45);
+  transform: translateY(-1px);
+}
+
+.guess-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 3px rgba(53, 122, 184, 0.4);
+}
+
+.guess-feedback {
+  margin: 0.1rem 0 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.feedback-correct {
+  color: #1e8f4e;
+}
+
+.feedback-wrong {
+  color: #c0392b;
 }

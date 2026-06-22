@@ -6,14 +6,15 @@ import deck from "./app/deck.json";
 function App() {
   const [index, setIndex] = useState(0);
 
-  const next = () =>
+  const next = () => setIndex((i) => (i + 1) % deck.length);
+  const prev = () => setIndex((i) => (i - 1 + deck.length) % deck.length);
+  const shuffle = () =>
     setIndex((i) => {
       if (deck.length <= 1) return i;
       let n = Math.floor(Math.random() * deck.length);
       while (n === i) n = Math.floor(Math.random() * deck.length);
       return n;
     });
-  const prev = () => setIndex((i) => (i - 1 + deck.length) % deck.length);
 
   const card = deck[index];
 
@@ -28,6 +29,9 @@ function App() {
       </button>
       <button className="next-btn" onClick={next}>
         Next
+      </button>
+      <button className="next-btn" onClick={shuffle}>
+        Shuffle
       </button>
     </div>
   );
